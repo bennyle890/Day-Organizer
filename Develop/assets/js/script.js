@@ -1,5 +1,3 @@
-document.onload = getValueText();
-
 // Date and Time
 function updateClock(){
     var now = new Date();
@@ -38,6 +36,7 @@ function initClock() {
     updateClock();
     window.setInterval("updateClock()", 1);
 }
+
 
 function getValueText() {
     if (localStorage.key !== null) {
